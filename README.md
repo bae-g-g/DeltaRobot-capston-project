@@ -19,11 +19,10 @@
 - [2. 팀원 및 역할](#2-팀원-및-역할)
   
 - [3. 시스템 구조](#3-시스템-구조)
-- 
+  
 - [4. 주요 기술 (Key Technologies)](#4-주요-기술-key-technologies)
   - [4.1 역기구학 (Inverse Kinematics)](#41-역기구학-inverse-kinematics)
   - [4.2 펌웨어 (Firmware Implementation)](#42-펌웨어-firmware-implementation)
-  - [기능 이미지](#기능-이미지)
   - [4.3 통신 인터페이스 (Communication Interface)](#43-통신-인터페이스-communication-interface)
   
 - [Troubleshooting (문제 해결 과정)](#troubleshooting-문제-해결-과정)
@@ -277,7 +276,7 @@ Jetson Nano(싱글보드 컴퓨터)와 teensy4.1(mcu) 간의 빠르고 신뢰성
 
   1. Jetson에서 객체 인식 후 목표 좌표 계산 및 역기구학 풀이.
   2. 계산된 스텝 값을 `M` 명령어로 Arduino에 전송.
-  3. Arduino는 `AccelStepper` 라이브러리를 통해 부드러운 가감속 제어로 모터 구동.
+  3. mcu는 `AccelStepper` 라이브러리를 통해 부드러운 가감속 제어로 모터 구동.
   4. 그리퍼 동작 시 `G` 명령어로 진공 펌프 제어.
 
 ## Troubleshooting (문제 해결 과정)
